@@ -24,10 +24,7 @@ solution 'PocoNet'
             '_SCL_SECURE_NO_WARNINGS',
             'NOMINMAX',
         }
-        links
-        {
-            'ws2_32'
-        }
+        links {'ws2_32', 'iphlpapi'}
 
     configuration 'gmake'
         buildoptions '-std=c++11'
@@ -39,6 +36,7 @@ solution 'PocoNet'
         uuid '65BCF1EB-A936-4688-B1F4-7073B4ACE736'
         defines
         {
+            'PCRE_STATIC',
             'POCO_STATIC',
             'POCO_NO_AUTOMATIC_LIBS',
         }
@@ -65,6 +63,7 @@ solution 'PocoNet'
         defines 
         {
             'GTEST_HAS_TR1_TUPLE=0',
+            'PCRE_STATIC',
             'POCO_STATIC',
             'POCO_NO_AUTOMATIC_LIBS',
         }
