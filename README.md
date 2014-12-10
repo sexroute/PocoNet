@@ -19,7 +19,7 @@ Poco's TCP and HTTP network module, making for embedded device(Android, iOS, Win
 
 ### Build for Android (Hosted in Windows 7 x64)
 
-1. Set environment variable `ANDROID_NDK` to root directory or your NDK path.
+1. Set environment variable `ANDROID_NDK` to root directory of your NDK path.
 2. Simply run `build-android.bat`.
 
 ### Build for iOS
