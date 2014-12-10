@@ -27,8 +27,9 @@ solution 'PocoNet'
         links {'ws2_32', 'iphlpapi'}
 
     configuration 'gmake'
-        buildoptions '-std=c++11'
+        --buildoptions '-std=c++11'
         defines '__STDC_LIMIT_MACROS'
+        links 'pthread'
 
     project 'PocoNet'
         location 'build'
@@ -60,6 +61,9 @@ solution 'PocoNet'
         kind 'ConsoleApp'
         location 'build'
         uuid '9C08AC41-18D8-4FB9-80F2-01F603917025'
+        if os.get() == 'linux' then
+        buildoptions '-std=c++11'
+        end
         defines 
         {
             'GTEST_HAS_TR1_TUPLE=0',
