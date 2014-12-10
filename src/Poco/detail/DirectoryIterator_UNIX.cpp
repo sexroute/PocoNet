@@ -34,11 +34,11 @@
 //
 
 
-#include "Poco/DirectoryIterator_UNIX.h"
+#include "Poco/detail/DirectoryIterator_UNIX.h"
 #if defined(POCO_VXWORKS)
-#include "Poco/File_VX.h"
+#include "Poco/detail/File_VX.h"
 #else
-#include "Poco/File_UNIX.h"
+#include "Poco/detail/File_UNIX.h"
 #endif
 #include "Poco/Path.h"
 

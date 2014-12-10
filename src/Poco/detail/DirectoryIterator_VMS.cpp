@@ -34,7 +34,7 @@
 //
 
 
-#include "Poco/DirectoryIterator_VMS.h"
+#include "Poco/detail/DirectoryIterator_VMS.h"
 #include "Poco/Path.h"
 #include "Poco/Exception.h"
 #include <iodef.h>

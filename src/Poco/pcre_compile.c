@@ -55,7 +55,7 @@ supporting internal functions that are not used by other modules. */
 used by pcretest. DEBUG is not defined when building a production library. */
 
 #if defined(DEBUG)
-#include "pcre_printint.src"
+//#include "pcre_printint.src"
 #endif
 
 
@@ -6359,7 +6359,7 @@ if ((re->flags & PCRE_REQCHSET) != 0)
     else printf("Req char = \\x%02x%s\n", ch, caseless);
   }
 
-pcre_printint(re, stdout, TRUE);
+//pcre_printint(re, stdout, TRUE);
 
 /* This check is done here in the debugging case so that the code that
 was compiled can be seen. */

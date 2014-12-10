@@ -34,8 +34,8 @@
 //
 
 
-#include "Poco/DirectoryIterator_WIN32.h"
-#include "Poco/File_WIN32.h"
+#include "Poco/detail/DirectoryIterator_WIN32.h"
+#include "Poco/detail/File_WIN32.h"
 #include "Poco/Path.h"
 
 
