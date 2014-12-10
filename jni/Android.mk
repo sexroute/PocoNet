@@ -24,6 +24,7 @@ LOCAL_SRC_FILES  := \
     Poco/pcre_ucd.c \
     Poco/pcre_valid_utf8.c \
     Poco/pcre_xclass.c \
+    Poco/Ascii.cpp \
     Poco/ASCIIEncoding.cpp \
     Poco/AtomicCounter.cpp \
     Poco/Base64Decoder.cpp \
@@ -31,6 +32,7 @@ LOCAL_SRC_FILES  := \
     Poco/Bugcheck.cpp \
     Poco/ByteOrder.cpp \
     Poco/CountingStream.cpp \
+    Poco/Debugger.cpp \
     Poco/DateTime.cpp \
     Poco/DateTimeFormat.cpp \
     Poco/DateTimeFormatter.cpp \
