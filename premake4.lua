@@ -31,7 +31,7 @@ solution 'PocoNet'
         defines '__STDC_LIMIT_MACROS'
         links 'pthread'
 
-    project 'PocoNet'
+    project 'libpoco'
         location 'build'
         kind 'StaticLib'
         uuid '65BCF1EB-A936-4688-B1F4-7073B4ACE736'
@@ -83,5 +83,5 @@ solution 'PocoNet'
             'dep/gtest',
             'dep/gtest/include',
         }
-        links 'PocoNet'
+        links 'libpoco'
 
