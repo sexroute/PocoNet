@@ -25,6 +25,7 @@ solution 'PocoNet'
             'NOMINMAX',
         }
         links {'ws2_32', 'iphlpapi'}
+        defines 'POCO_NO_UNWINDOWS'
 
     configuration 'gmake'
         --buildoptions '-std=c++11'
