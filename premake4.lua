@@ -28,7 +28,6 @@ solution 'PocoNet'
         defines 'POCO_NO_UNWINDOWS'
 
     configuration 'gmake'
-        --buildoptions '-std=c++11'
         defines '__STDC_LIMIT_MACROS'
         links 'pthread'
 
@@ -40,6 +39,7 @@ solution 'PocoNet'
         {
             'PCRE_STATIC',
             'POCO_STATIC',
+            'POCO_NO_STAT64',
             'POCO_NO_AUTOMATIC_LIBS',
         }
         files
