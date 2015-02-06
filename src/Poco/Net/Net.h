@@ -67,16 +67,6 @@
 #endif
 
 
-//
-// Automatically link Net library.
-//
-#if defined(_MSC_VER)
-	#if !defined(POCO_NO_AUTOMATIC_LIBS) && !defined(Net_EXPORTS)
-		#pragma comment(lib, "PocoNet" POCO_LIB_SUFFIX)
-	#endif
-#endif
-
-
 namespace Poco {
 namespace Net {
 
