@@ -10,9 +10,9 @@ First, Obtain premake toolchain(http://industriousone.com/premake/download)
 
 ### Build on Windows (Windows 7 x64)
 
-1. Simply run `build-msvc2012.bat` to generate Visual C++ 2012 solution files.
+1. Simply run `build-msvc2013.bat` to generate Visual C++ 2013 solution files.
 
-### Build on Linux (Ubuntu 12.04 x64)
+### Build on Linux (Ubuntu 14.04 x64)
 
 1. Type `premake4 gmake` in your terminal window.
 2. Type `make config=release64` in your terminal window.
