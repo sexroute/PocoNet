@@ -205,7 +205,7 @@ solution 'PocoNet'
             'src/Poco/Windows1250Encoding.cpp',
             'src/Poco/Windows1251Encoding.cpp',
             'src/Poco/Windows1252Encoding.cpp',
-            'src/Poco/WindowsConsoleChannel.cpp',
+            --'src/Poco/WindowsConsoleChannel.cpp',
             'src/Poco/Net/*.h',
             'src/Poco/Net/*.cpp',
         }
