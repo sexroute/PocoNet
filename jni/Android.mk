@@ -105,6 +105,7 @@ LOCAL_SRC_FILES  := \
     Poco/Net/SocketImpl.cpp \
     Poco/Net/SocketStream.cpp \
     Poco/Net/StreamSocket.cpp \
-    Poco/Net/StreamSocketImpl.cpp
+    Poco/Net/StreamSocketImpl.cpp \
+    test.cpp
 
 include $(BUILD_STATIC_LIBRARY)
