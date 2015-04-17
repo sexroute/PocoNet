@@ -48,9 +48,9 @@ solution 'PocoNet'
         }
         files
         {
-            'src/Poco/*.c',
-            'src/Poco/*.cc',
             'src/Poco/*.h',
+            'src/Poco/*.c',
+            --'src/Poco/*.cc',
             'src/Poco/AbstractObserver.cpp',
             'src/Poco/ActiveDispatcher.cpp',
             'src/Poco/ArchiveStrategy.cpp',
