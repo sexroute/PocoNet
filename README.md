@@ -24,9 +24,4 @@ First, Obtain premake toolchain(http://industriousone.com/premake/download)
 
 ### Build for iOS
 
-1. Type `premake4 xcode4` in your terminal window.
-2. Change architecture from x86/64 to ARM
-
-### Build for Windows Phone
-
-(to be continued.)
+1. Open xcode project in dir 'xcode'
