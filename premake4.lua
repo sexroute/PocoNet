@@ -67,7 +67,6 @@ solution 'PocoNet'
             'src/Poco/Bugcheck.cpp',
             'src/Poco/ByteOrder.cpp',
             'src/Poco/Channel.cpp',
-
             'src/Poco/Checksum.cpp',
             'src/Poco/Clock.cpp',
             'src/Poco/Condition.cpp',
@@ -90,7 +89,7 @@ solution 'PocoNet'
             'src/Poco/ErrorHandler.cpp',
             'src/Poco/Event.cpp',
             'src/Poco/EventArgs.cpp',
-            'src/Poco/EventLogChannel.cpp',
+            --'src/Poco/EventLogChannel.cpp',
             'src/Poco/Exception.cpp',
             'src/Poco/FIFOBufferStream.cpp',
             'src/Poco/File.cpp',
@@ -110,7 +109,6 @@ solution 'PocoNet'
             'src/Poco/Latin1Encoding.cpp',
             'src/Poco/Latin2Encoding.cpp',
             'src/Poco/Latin9Encoding.cpp',
-
             'src/Poco/LineEndingConverter.cpp',
             'src/Poco/LocalDateTime.cpp',
             'src/Poco/LogFile.cpp',
