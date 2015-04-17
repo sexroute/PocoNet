@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "2F7875ED46A0391311D770C9"
+               BlueprintIdentifier = "4F1D16621D6D775A591E7A43"
                BuildableName = "liblibpoco.a"
                BlueprintName = "libpoco"
                ReferencedContainer = "container:libpoco.xcodeproj">
@@ -26,7 +26,7 @@
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES"
-      buildConfiguration = "Debug Native 32-bit">
+      buildConfiguration = "Debug">
       <Testables>
       </Testables>
    </TestAction>
@@ -35,14 +35,14 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       launchStyle = "0"
       useCustomWorkingDirectory = "NO"
-      buildConfiguration = "Debug Native 32-bit"
+      buildConfiguration = "Release"
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       allowLocationSimulation = "YES">
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "2F7875ED46A0391311D770C9"
+            BlueprintIdentifier = "4F1D16621D6D775A591E7A43"
             BuildableName = "liblibpoco.a"
             BlueprintName = "libpoco"
             ReferencedContainer = "container:libpoco.xcodeproj">
@@ -55,12 +55,12 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
-      buildConfiguration = "Release Native 32-bit"
+      buildConfiguration = "Release"
       debugDocumentVersioning = "YES">
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "2F7875ED46A0391311D770C9"
+            BlueprintIdentifier = "4F1D16621D6D775A591E7A43"
             BuildableName = "liblibpoco.a"
             BlueprintName = "libpoco"
             ReferencedContainer = "container:libpoco.xcodeproj">
@@ -68,10 +68,10 @@
       </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
-      buildConfiguration = "Debug Native 32-bit">
+      buildConfiguration = "Debug">
    </AnalyzeAction>
    <ArchiveAction
-      buildConfiguration = "Release Native 32-bit"
+      buildConfiguration = "Release"
       revealArchiveInOrganizer = "YES">
    </ArchiveAction>
 </Scheme>
