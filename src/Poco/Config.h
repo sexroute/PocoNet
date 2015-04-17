@@ -168,4 +168,8 @@
 // This allows the use of these macros in a release version.
 // #define POCO_LOG_DEBUG
 
+#ifndef POCO_NO_UNWINDOWS
+#define POCO_NO_UNWINDOWS
+#endif
+
 #endif // Foundation_Config_INCLUDED
