@@ -1,7 +1,7 @@
 PocoNet
 =======
 
-Poco's TCP and HTTP network module, extracted for embedded device(Android, iOS, Window Phone) usage.
+[Poco](http://pocoproject.org/)'s TCP and HTTP network module, extracted for embedded device(Android, iOS, Window Phone) usage.
 
 
 ## Installation
