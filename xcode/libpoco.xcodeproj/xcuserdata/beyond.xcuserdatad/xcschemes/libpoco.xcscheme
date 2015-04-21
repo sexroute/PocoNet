@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "4F1D16621D6D775A591E7A43"
-               BuildableName = "liblibpoco.a"
+               BuildableName = "libpoco.a"
                BlueprintName = "libpoco"
                ReferencedContainer = "container:libpoco.xcodeproj">
             </BuildableReference>
@@ -35,7 +35,7 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       launchStyle = "0"
       useCustomWorkingDirectory = "NO"
-      buildConfiguration = "Release"
+      buildConfiguration = "Debug"
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       allowLocationSimulation = "YES">
@@ -43,7 +43,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "4F1D16621D6D775A591E7A43"
-            BuildableName = "liblibpoco.a"
+            BuildableName = "libpoco.a"
             BlueprintName = "libpoco"
             ReferencedContainer = "container:libpoco.xcodeproj">
          </BuildableReference>
@@ -61,7 +61,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "4F1D16621D6D775A591E7A43"
-            BuildableName = "liblibpoco.a"
+            BuildableName = "libpoco.a"
             BlueprintName = "libpoco"
             ReferencedContainer = "container:libpoco.xcodeproj">
          </BuildableReference>
