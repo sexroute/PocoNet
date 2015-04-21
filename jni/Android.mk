@@ -8,16 +8,8 @@ LOCAL_PATH := $(call my-dir)/../src
 include $(CLEAR_VARS)
 LOCAL_MODULE     := poco
 LOCAL_C_INCLUDES := $(LOCAL_PATH)
-LOCAL_CFLAGS     := -DPOCO_ANDROID -DPOCO_NO_FPENVIRONMENT -DPOCO_NO_WSTRING -DPOCO_NO_SHAREDMEMORY
+LOCAL_CFLAGS     := -DPOCO_ANDROID -DPCRE_STATIC -DPOCO_STATIC -DPOCO_ENABLE_CPP11 -DPOCO_NO_FPENVIRONMENT -DPOCO_NO_WSTRING -DPOCO_NO_SHAREDMEMORY
 LOCAL_SRC_FILES  := \
-    Poco/adler32.c \
-    Poco/compress.c \
-    Poco/crc32.c \
-    Poco/deflate.c \
-    Poco/infback.c \
-    Poco/inffast.c \
-    Poco/inflate.c \
-    Poco/inftrees.c \
     Poco/pcre_byte_order.c \
     Poco/pcre_chartables.c \
     Poco/pcre_compile.c \
@@ -65,7 +57,6 @@ LOCAL_SRC_FILES  := \
     Poco/DateTimeFormatter.cpp \
     Poco/DateTimeParser.cpp \
     Poco/Debugger.cpp \
-    Poco/DeflatingStream.cpp \
     Poco/DigestEngine.cpp \
     Poco/DigestStream.cpp \
     Poco/DirectoryIterator.cpp \
@@ -91,7 +82,6 @@ LOCAL_SRC_FILES  := \
     Poco/HashStatistic.cpp \
     Poco/HexBinaryDecoder.cpp \
     Poco/HexBinaryEncoder.cpp \
-    Poco/InflatingStream.cpp \
     Poco/Latin1Encoding.cpp \
     Poco/Latin2Encoding.cpp \
     Poco/Latin9Encoding.cpp \

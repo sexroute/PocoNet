@@ -44,6 +44,7 @@ solution 'PocoNet'
             'PCRE_STATIC',
             'POCO_STATIC',
             'POCO_NO_STAT64',
+            'POCO_ENABLE_CPP11',
             'POCO_NO_AUTOMATIC_LIBS',
         }
         files
