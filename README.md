@@ -6,7 +6,7 @@ PocoNet
 
 ## Installation
 
-First, Obtain []premake5](http://premake.github.io/download.html) toolchain
+First, Obtain [premake5](http://premake.github.io/download.html) toolchain
 
 ### Build on Windows (Windows 7 x64)
 
