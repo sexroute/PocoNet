@@ -6,7 +6,7 @@ PocoNet
 
 ## Installation
 
-First, Obtain premake toolchain(http://industriousone.com/premake/download)
+First, Obtain premake5 toolchain(http://industriousone.com/premake/download)
 
 ### Build on Windows (Windows 7 x64)
 
@@ -14,14 +14,13 @@ First, Obtain premake toolchain(http://industriousone.com/premake/download)
 
 ### Build on Linux (Ubuntu 14.04 x64)
 
-1. Type `premake4 gmake` in your terminal window.
-2. Type `make config=release64` in your terminal window.
+1. Type `premake5 gmake && make config=release_x64` in your terminal window.
 
-### Build for Android (Hosted in Windows 7 x64)
+### Build for Android (Hosted on Windows 7 x64)
 
-1. Set environment variable `ANDROID_NDK` to root directory of your NDK path.
+1. Set environment variable `ANDROID_NDK` as root directory of your NDK path.
 2. Simply run `build-android.bat`.
 
-### Build for iOS
+### Build for iOS(Hosted on OSX)
 
-1. Open xcode project in dir 'xcode'
+1. Open XCode project in directory 'xcode'
