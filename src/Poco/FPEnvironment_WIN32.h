@@ -87,7 +87,7 @@ inline bool FPEnvironmentImpl::isInfiniteImpl(double value)
 
 inline bool FPEnvironmentImpl::isInfiniteImpl(long double value)
 {
-	return _finite(value) == 0;
+	return _finite((double)value) == 0;
 }
 
 
@@ -105,7 +105,7 @@ inline bool FPEnvironmentImpl::isNaNImpl(double value)
 
 inline bool FPEnvironmentImpl::isNaNImpl(long double value)
 {
-	return _isnan(value) != 0;
+    return _isnan((double)value) != 0;
 }
 
 
