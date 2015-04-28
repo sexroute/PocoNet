@@ -5,9 +5,7 @@
 solution 'PocoNet'
     configurations {'Debug', 'Release'}
     language 'C++'
-    --flags {'ExtraWarnings'}
     targetdir 'bin'
-    platforms {'x32', 'x64'}
 
     configuration 'Debug'
         defines { 'DEBUG' }
@@ -15,7 +13,8 @@ solution 'PocoNet'
 
     configuration 'Release'
         defines { 'NDEBUG' }
-        flags { 'Symbols', 'Optimize' }
+        flags { 'Symbols' }
+        optimize 'On'
 
     configuration 'vs*'
         defines
@@ -32,13 +31,27 @@ solution 'PocoNet'
         }
 
     configuration 'gmake'
-        defines '__STDC_LIMIT_MACROS'
+        buildoptions '-std=c++11'
         links 'pthread'
-
+        
+    configuration 'linux'
+        defines 
+        {
+            '_GNU_SOURCE',
+            '__STDC_LIMIT_MACROS',
+        }
+        
+    configuration 'macosx'
+        toolset 'clang'
+        
     project 'libpoco'
+        targetname 'libpoco'
         location 'build'
         kind 'StaticLib'
-        uuid '65BCF1EB-A936-4688-B1F4-7073B4ACE736'
+        
+        filter "configurations:Debug"
+            targetname 'libpocod'
+            
         defines
         {
             'PCRE_STATIC',
@@ -221,10 +234,6 @@ solution 'PocoNet'
         language 'C++'
         kind 'ConsoleApp'
         location 'build'
-        uuid '9C08AC41-18D8-4FB9-80F2-01F603917025'
-        if os.get() == 'linux' then
-        buildoptions '-std=c++11'
-        end
         defines
         {
             'GTEST_HAS_TR1_TUPLE=0',
