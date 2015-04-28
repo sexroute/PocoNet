@@ -7,16 +7,16 @@ solution 'PocoNet'
     language 'C++'
     targetdir 'bin'
 
-    configuration 'Debug'
-        defines { 'DEBUG' }
-        flags { 'Symbols' }
+    filter 'configurations:Debug'
+        defines     { 'DEBUG' }
+        flags       { 'Symbols' }
 
-    configuration 'Release'
-        defines { 'NDEBUG' }
-        flags { 'Symbols' }
-        optimize 'On'
+    filter 'configurations:Release'
+        defines     { 'NDEBUG' }
+        flags       { 'Symbols' }
+        optimize    'On'
 
-    configuration 'vs*'
+    filter 'action:vs*'
         defines
         {
             '_WIN32_WINNT=0x0600',
@@ -24,31 +24,29 @@ solution 'PocoNet'
             'NOMINMAX',
             'POCO_NO_UNWINDOWS',
         }
-        links 
+        links
         {
-            'ws2_32', 
+            'ws2_32',
             'iphlpapi',
         }
 
-    configuration 'gmake'
-        buildoptions '-std=c++11'
-        links 'pthread'
-        
-    configuration 'linux'
-        defines 
+    filter 'action:gmake'
+        buildoptions    '-std=c++11'
+        links           'pthread'
+        defines
         {
             '_GNU_SOURCE',
             '__STDC_LIMIT_MACROS',
         }
-        
-    configuration 'macosx'
+
+    filter 'system:macosx'
         toolset 'clang'
-        
+
     project 'libpoco'
-        targetname 'libpoco'
-        location 'build'
-        kind 'StaticLib'
-                    
+        targetname  'libpoco'
+        location    'build'
+        kind        'StaticLib'
+
         defines
         {
             'PCRE_STATIC',
@@ -220,19 +218,16 @@ solution 'PocoNet'
             'src/Poco/Net/*.h',
             'src/Poco/Net/*.cpp',
         }
-        includedirs
-        {
-            'src'
-        }
-        libdirs 'bin'
-        
-        filter "configurations:Debug"
+        includedirs 'src'
+        libdirs     'bin'
+
+        filter 'configurations:Debug'
             targetname 'libpocod'
 
     project 'UnitTest'
-        language 'C++'
-        kind 'ConsoleApp'
-        location 'build'
+        language    'C++'
+        kind        'ConsoleApp'
+        location    'build'
         defines
         {
             'GTEST_HAS_TR1_TUPLE=0',
@@ -251,5 +246,10 @@ solution 'PocoNet'
             'dep/gtest',
             'dep/gtest/include',
         }
-        links 'libpoco'
+        
+        filter 'configurations:Debug'
+            links 'libpocod'        
+        
+        filter 'configurations:Debug'
+            links 'libpoco'
 
