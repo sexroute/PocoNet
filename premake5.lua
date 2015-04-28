@@ -48,10 +48,7 @@ solution 'PocoNet'
         targetname 'libpoco'
         location 'build'
         kind 'StaticLib'
-        
-        filter "configurations:Debug"
-            targetname 'libpocod'
-            
+                    
         defines
         {
             'PCRE_STATIC',
@@ -228,7 +225,9 @@ solution 'PocoNet'
             'src'
         }
         libdirs 'bin'
-
+        
+        filter "configurations:Debug"
+            targetname 'libpocod'
 
     project 'UnitTest'
         language 'C++'
