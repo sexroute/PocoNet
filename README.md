@@ -10,11 +10,11 @@ First, Obtain [premake5](http://premake.github.io/download.html) toolchain
 
 ### Build on Windows (Windows 7 x64)
 
-1. Simply run `build-msvc2013.bat` to generate Visual C++ 2013 solution files.
+1. Simply run `msvc2013.bat` to generate Visual C++ 2013 solution files.
 
 ### Build on Linux (Ubuntu 14.04 x64)
 
-1. Type `premake5 gmake && make config=release_x64` in your terminal window.
+1. Type `premake5 gmake && make config=release` in your terminal window.
 
 ### Build for Android (Hosted on Windows 7 x64)
 
